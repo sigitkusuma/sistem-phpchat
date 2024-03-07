@@ -3,7 +3,7 @@
 class DB {
     public static function fetch(string $request, array $data, bool $all = false) {
 
-        $pdo = new PDO('mysql:host=localhost;dbname=webchat', "root", "root");
+        $pdo = new PDO('mysql:host=localhost;dbname=webchat', "sigit", "sistem");
 
         $request = $pdo -> prepare($request);
         $request -> execute($data);
